@@ -49,15 +49,15 @@ nav img {
     font-size: 20px; /* Font size for the links */
 }
 
-/* Styling for the pseudo-element used for the hover effect */
+/* Styling for animation under nav links*/
 .nav-links ul li::after {
-    content: ''; /* Empty content for the pseudo-element */
-    width: 0%; /* Initial width set to 0 */
-    height: 2px; /* Height of the pseudo-element */
-    background: #000000; /* Black background color */
-    display: block; /* Display as block element */
-    margin: auto; /* Center the pseudo-element horizontally */
-    transition: 0.5s; /* Smooth transition effect */
+    content: ''; 
+    width: 0%; 
+    height: 2px; 
+    background: #000000; 
+    display: block; 
+    margin: auto; 
+    transition: 0.5s; 
 }
 
 /* Hover effect for the navigation links */
@@ -85,9 +85,10 @@ nav img {
 .text-box p {
     margin: 10px 0 40px; /* Margin around the paragraph */
     font-size: 14px; /* Font size for the paragraph */
-    color: #fff; /* White text color */
+    color: #fff; 
 }
 
+/* Styling for the hero button in the text box */
 .hero-btn {
     display: inline-block;
     text-decoration: none;
@@ -98,11 +99,51 @@ nav img {
     background: transparent;
     position: relative;
     cursor: pointer;
+    transition: 0.5s; /* Added transition to the hero button for smooth animation */
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
     border: 1px solid #444343;
     background: #444343;
     transition: 1s;
 }
 
+/* Styling for the about-us section */
+.about-us {
+    padding: 100px 20px; /* Increased padding to ensure it doesn't overlap with header */
+    background: #f9f9f9; /* Light background color for contrast */
+}
+
+/* Styling for the about-us text container */
+.about-us-text {
+    max-width: 800px; /* Maximum width for the text box */
+    margin: 0 auto; /* Center the text box horizontally */
+    padding: 20px; /* Padding inside the text box */
+    background-color: #fff; /* White background for the text box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for the text box */
+    text-align: left; /* Left-align text */
+}
+
+/* Styling for the about-us title */
+.about-title {
+    font-size: 28px; /* Reduced font size for the main heading */
+    color: #333; /* Darker color for the main heading */
+    margin-bottom: 20px; /* Margin below the main heading */
+}
+
+/* Styling for the about-us subtitles */
+.about-subtitle {
+    font-size: 24px; /* Reduced font size for the subtitles */
+    color: #444; /* Darker color for the subtitles */
+    margin-top: 20px; /* Top margin for subtitles */
+    margin-bottom: 10px; /* Bottom margin for subtitles */
+}
+
+/* Styling for the about-us paragraphs */
+.about-paragraph {
+    font-size: 14px; /* Reduced font size for paragraphs */
+    color: #666;
+ } /* Darker color for paragraphs */
+
+
+ 
