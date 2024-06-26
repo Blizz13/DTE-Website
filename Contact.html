@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- Sets the viewport to ensure proper scaling on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Sets the title of the webpage -->
-    <title>Rototuna Chess Club</title>
+    <title>Contact Us - Rototuna Chess Club</title>
     
     <!-- Links to an external stylesheet for styling the webpage -->
     <link rel="stylesheet" href="style.css">
@@ -17,31 +17,48 @@
     <!-- Links to the Poppins font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
 </head>
-<body>
+<body class="contact-page">
     <!-- Header section of the webpage -->
-    <section class="header">
+    <header class="header">
         <!-- Navigation bar -->
         <nav>
             <!-- Logo of the Rototuna Chess Club with a link to the home page -->
             <a href="Home.html" class="logo"><img src="images/logo.png" alt="Rototuna Chess Club Logo"></a>
-            
             <!-- Container for navigation links -->
             <div class="nav-links">
                 <ul>
                     <!-- Navigation links to different sections of the website -->
                     <li><a href="Home.html">Home</a></li>
-                    <li><a href="">About</a></li>                      
-                    <li><a href="">Contact</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
+    </header> 
 
-        <!-- Text box containing the welcome message and a brief description -->
-        <div class="text-box">
-            <h1>Welcome To The Offical Rototuna Chess Club!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante velit. Nam ultricies ut augue lacinia rutrum. Nulla est est, ullamcorper bibendum varius at, gravida a arcu.</p>
-            <a href="" class="hero-btn">Click Me To Learn More!</a>
+    <!-- Contact Us section of the webpage -->
+    <section class="contact-us">
+        <!-- Contact container containing the form -->
+        <div class="contact-container">
+            <h1 class="contact-title">Contact Us</h1>
+            <p class="contact-paragraph">We would love to hear from you! Whether you have questions about joining, upcoming events, or anything else, please feel free to get in touch using the form below.</p>
+            
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
-    </section> 
+    </section>
 </body>
 </html>
